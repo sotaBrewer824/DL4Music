@@ -1,2 +1,10 @@
 # DL4Music
 My codes for music generations with RNN, X-Tranformers and MusicLang
+
+With the rapid development of artificial neural networks, the task of music generation using deep learning has gradually gained attention. Before the emergence of large language models, generating long music pieces and music with a sense of musicality has been a significant challenge. Large language models, due to their vast pre-trained knowledge and strong sequence data generation capabilities, have been widely applied in various fields with good results. Therefore, the use of large language models for music generation is attracting attention from researchers at home and abroad.
+
+Despite the shortcomings of classical recurrent neural networks and self-attention mechanisms in sequence generation tasks, I overcame these limitations by designing a novel model, namely the X-Transformer-based large language music generation model. By modifiing the encoders and decoders of the classical Transformer model and integrating techniques such as flash attention mechanism, rotation encoding, and mixed-precision computation from large language model technology, the X-Transformer model could approach or even partially surpass the music generation performance of Llama2 while compressing parameters.In addition to innovative model design, I also applied the open-source music generation large language model MusicLang based on Llama2 to complete music generation tasks. By using this advanced model, the paper was also able to generate music pieces with rich musical features, including melody, rhythm, and harmony. This further confirmed the effectiveness and feasibility of the X-Transformer model in the field of music generation. 
+
+In the evaluation section, I decided to use MOSNet -- A widely used pretrained CNN-BiLSTM to evaluate the quality of the generated music audio. Besides, I tried to explore the potential of large language models with prompt engineering such as Qwen-Audio in music appreciation.
+
+Finally, I would like to express my appreciation to [Alex](https://github.com/asigalov61), most of the skeleton was adapted from him!
